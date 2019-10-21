@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_device"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前链接的信息："
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/iv_closed"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_product"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/rl_top"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_product_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择产品"
+
+            />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_product"
+        android:layout_below="@+id/tv_product_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_alignParentBottom="true"
+            ></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_product"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+        <TextView
+            android:id="@+id/ble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前蓝牙链接列表"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_devices"
+            android:layout_below="@+id/ble"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hohem.dem.ble.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <Button
+           android:id="@+id/btn_open"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="打开"
+           android:layout_weight="1"
+           />
+
+       <Button
+           android:id="@+id/btn_send"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="发送"
+           android:layout_weight="1"
+
+           />
+
+       <Button
+           android:id="@+id/btn_closed"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="断开"
+
+           />
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="蓝牙连接基本信息："
+        />
+
+     <TextView
+         android:id="@+id/tv_name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="name:"
+         />
+
+    <TextView
+        android:id="@+id/tv_bel_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="address:"
+        />
+
+    <TextView
+        android:id="@+id/tx_ble_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="发送蓝牙信息："
+        />
+    <TextView
+        android:id="@+id/tx_ble_callback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="蓝牙回复信息："
+        />
+</LinearLayout>

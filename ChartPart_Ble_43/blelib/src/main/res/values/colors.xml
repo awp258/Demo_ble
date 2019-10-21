@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#FF000000</color>
+    <color name="whitegrey">#FFF2F2F2</color>
+    <color name="logoColor">#3BB3C3</color>
+    <color name="logobgColor">#2067c2ef</color>
+    <color name="redColor">#FF0000</color>
+    <color name="greenColor">#00FF00</color>
+    <color name="drawColor">#63B8FF</color>
+    <color name="bgColor">#F0F0F0</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="grey">#FF6E6E6A</color>
+    <color name="grey1">#6D565654</color>
+    <color name="focuscolor">#FF46CFF1</color>
+    <color name="bar_color">#24565654</color>
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+    <color name="red">#FF3B00</color>
+    <color name="red_press">#990000</color>
+    <color name="dark_gray">#4C535B</color>
+    <color name="dark_gray_press">#ff7e8a97</color>
+    <color name="yellow">#FFC125</color>
+    <color name="green">#9ACD32</color>
+</resources>
